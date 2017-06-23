@@ -34,43 +34,23 @@ a:link, a:hover {
     font-weight: 400;
 }
 
-.navbar {
+.topnav {
   background-color: transparent;
-  border-color: transparent;
-  border: none;
-  padding: 0;
+  text-align: right;
+  margin-right: 5%;
+  color: #f8f8f8;
 }
 
-.navbar-custom .nav li a {
+.topnav a:link {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav a:focus {
+.topnav a:hover,
+.topnav a:focus {
   color: #54ABFF;
 }
-/*
-@media (min-width: 768px) {
-  .navbar-custom {
-    background-color: transparent;
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    border: none;
-  }
-  .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-custom.affix {
-    background-color: #222222;
-    padding: 10px 0;
-  }
-}*/
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
