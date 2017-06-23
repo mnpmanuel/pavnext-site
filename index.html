@@ -9,7 +9,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+    <title>PAVNEXT</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,11 +45,7 @@
                         <img src="img/logo.png">
                         <h3>The Technological Pavements Company</h3>
                         <br>
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="#services" class="btn btn-default btn-lg"><span class="network-name">Tell Me More</span></a>
-                            </li>
-                        </ul>
+                        <a href="#services" class="page-scroll"><i class="fa fa-4x fa-arrow-circle-o-down text-primary sr-icons"></i></a>
                     </div>
                 </div>
             </div>
@@ -58,13 +56,11 @@
     </div>
     <!-- /.intro-header -->
 
-    <a  name="services"></a>
-    <section id="services">
+    <div id="services" class="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">What We Do</h2>
-                    <hr class="primary">
                 </div>
             </div>
         </div>
@@ -102,14 +98,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="content-section-a">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Road Safety</h2>
                     <p class="lead">The World Health Organization defines excessive speed as the main cause of road accidents. Current solutions to reduce vehicle speeds are all depending on the driver' action. Pavnext presents the first solution that will reduce vehicles' speed without any driver action and, at the same time, without affect or interfere with ride quality.</p>
@@ -131,7 +126,6 @@
 
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Sustainable Energy Generation</h2>
                     <p class="lead">Pavnext converts with a very high efficiency the energy harvested from vehicles into electrical energy. As the target implementation areas consist of speed reduction areas, Pavnext makes use of an energy that otherwise would be lost. As so, it recycles a wasted energy into clean electrical energy.</p>
@@ -153,7 +147,6 @@
 
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Smart Data And Energy Eficiency</h2>
                     <p class="lead">As Pavnext is implemented in the road pavement, it has a privileged position to monitor traffic and speed, and since it generated and delivers electrical energy it can also monitor these. Combining all the information, it makes use of it to optimize energy consumptions in real time in a unique way.</a>.</p>
@@ -170,7 +163,7 @@
     <!-- /.content-section-a -->
 
     <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+    <div class="awards">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -178,26 +171,24 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="team-member">
-                        <a href="http://premiosr.com/pt/premio" target="blank"><img src="img/awards/seg.jpg" class="img-responsive img-circle" alt=""></a>
-                        <h4>Prémio Inovação segurança Rodoviária 2016</h4>
-                        <p class="text-muted">ACP & BP</p>
-                    </div>
+                <div class="col-lg-12 text-center">
+                    <a href="http://premiosr.com/pt/premio" target="blank"><img src="img/awards/seg.jpg" class="img-responsive " alt=""></a>
+                    <a href="http://premiosr.com/pt/premio" target="blank"><h4 class="color: #ffffff;">Prémio Inovação segurança Rodoviária 2016</h4></a>
+                    <p>ACP & BP</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Clients Aside -->
-    <aside class="clients">
+    <div class="partners">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Our Partners</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row partnersImg">
                 <div class="col-md-2 col-md-offset-1">
                     <a href="https://www.uc.pt/" target="blank">
                         <img src="img/logos/uc.jpg" class="img-responsive img-centered" alt="">
@@ -226,11 +217,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <a href="mailto" class="btn btn-xl">Partner With Us</a>
+                    <a href="mailto" class="btn btn-default btn-lg">Partner With Us</a>
                 </div>
             </div>
         </div>
-    </aside>
+    </div>
 
     <div class="banner">
 
@@ -242,17 +233,7 @@
                     <h4>Don't worry, we won't spam you</h4>
                 </div>
                 <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
+                    <!-->MAILCHIMP FORM<-->
                 </div>
             </div>
 
@@ -266,22 +247,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
+                    <ul class="list-inline quicklinks text-center">
                         <li>Coimbra and Porto, Portugal</a>
                         </li>
                         <li><a href="mailto:main@pavnext.com">Contact Us</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-center">
                     <ul class="list-inline social-buttons">
-                        <li><a href="https://www.facebook.com/Pavnext-1888763191389776/" target="blank"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/Pavnext-1888763191389776/" target="blank"><i class="fa fa-facebook fa-2x"></i></a>
                         </li>
-                        <li><a href="https://www.linkedin.com/company-beta/11157722" target="blank"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="https://www.linkedin.com/company-beta/11157722" target="blank"><i class="fa fa-linkedin fa-2x"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 text-center">
                     <span class="copyright">Copyright &copy; Pavnext 2017</span>
                 </div>
             </div>
@@ -293,6 +274,9 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/pavnext.js"></script>
 
 </body>
 

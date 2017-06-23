@@ -21,6 +21,10 @@ h6 {
     font-weight: 700;
 }
 
+a:link, a:hover {
+    text-decoration: none;
+}
+
 .topnav {
     font-size: 14px; 
 }
@@ -85,22 +89,60 @@ h6 {
     }
 }
 
-.network-name {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
 }
 
 .content-section-b {
     padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+    border-top: 1px solid #54ABFF;
+    border-bottom: 1px solid #54ABFF;
+    background-color: rgba(84,171,255,1);
+    color: #f8f8f8;
+}
+
+.services {
+    padding: 50px 0;
+    border-bottom: 1px solid #54ABFF;
+    background-color: rgba(84,171,255,1);
+    color: #f8f8f8;
+}
+
+.awards {
+    padding: 50px 0;
+    border-bottom: 1px solid #54ABFF;
+    background-color: rgba(84,171,255,1);
+    color: #f8f8f8;
+}
+.awards img {
+    margin: auto;
+    margin-bottom: 1%;
+    max-height: 100px;
+    max-width: 50%;
+    border-radius: 10%;
+}
+.awards a:link, a:visited {
+    color:#ffffff;
+}
+.awards a:hover, a:active {
+    color: #337AB7;
+}
+
+.partners {
+    padding: 50px 0;
+}
+.partnersImg {
+    display: block;
+    margin: auto;
+}
+.partners .btn {
+    margin-top: 1%;
+    background-color: rgba(84,171,255,1);
+    color: #f8f8f8;
+    border-color: #ffffff;
+}
+.partners a:hover, a:active {
+    background-color: #337AB7;
 }
 
 .section-heading {
@@ -162,7 +204,15 @@ h6 {
 
 footer {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: rgba(84,171,255,1);
+    color: #f8f8f8;
+}
+
+footer a:link, a:visited {
+    color: #337AB7;
+}
+footer a:hover, a:active {
+    color:#ffffff;
 }
 
 p.copyright {
