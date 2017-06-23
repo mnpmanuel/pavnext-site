@@ -1,7 +1,7 @@
 /*
- * Start Bootstrap - Landing Page (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Pavnext Landing Page Based on the Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2017 Pavnext
+ * Done by Manuel Palmeira (http://manuelpalmeira.xyz)
  */
 
 body,
@@ -25,35 +25,13 @@ a:link, a:hover {
     text-decoration: none;
 }
 
-.topnav {
-    font-size: 14px; 
-}
-
 .lead {
     font-size: 18px;
     font-weight: 400;
 }
 
-.topnav {
-  background-color: transparent;
-  text-align: right;
-  margin-right: 5%;
-  color: #f8f8f8;
-}
-
-.topnav a:link {
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 1px;
-  color: white;
-}
-.topnav a:hover,
-.topnav a:focus {
-  color: #54ABFF;
-}
-
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -66,23 +44,31 @@ a:link, a:hover {
     height: auto;
 }
 
+.intro-header .topnav {
+  background-color: transparent;
+  text-align: right;
+  margin-right: 2%;
+  margin-top: -1%;
+  color: #f8f8f8;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.topnav a:link {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #f8f8f8;
+}
+.topnav a:hover,
+.topnav a:focus {
+  color: #54ABFF;
+}
+
 .intro-message {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .intro-message > h3 {
@@ -95,6 +81,7 @@ a:link, a:hover {
     font-weight: 700;
     letter-spacing: 1px;
     background-color: rgba(0,0,0,0);
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 @media(max-width:767px) {
@@ -102,39 +89,26 @@ a:link, a:hover {
         padding-bottom: 15%;
     }
 
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
+    .intro-message > h3 {
+        font-size: 1.2em;
     }
 }
 
-.content-section-a {
+.aboutUs {
     padding: 50px 0;
-}
-
-.content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #54ABFF;
     border-bottom: 1px solid #54ABFF;
     background-color: rgba(84,171,255,1);
     color: #f8f8f8;
 }
 
-.services {
+.content-section-a {
     padding: 50px 0;
+    color: #737373;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #54ABFF;
     border-bottom: 1px solid #54ABFF;
     background-color: rgba(84,171,255,1);
     color: #f8f8f8;
@@ -162,7 +136,9 @@ a:link, a:hover {
 
 .partners {
     padding: 50px 0;
+    color: #737373;
 }
+
 .partnersImg {
     display: inline-block;
     vertical-align: middle;
@@ -170,24 +146,22 @@ a:link, a:hover {
     margin-bottom: 2%;
 }
 
+.partners img {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
 .partners .btn {
     margin-top: 3%;
-    border-color: #f8f8f8;
-    color: #000000;
+    border-color: #737373;
+    color: #737373;
     letter-spacing: 1px;
-    border-color: #000000;
     background-color: rgba(0,0,0,0);
 }
 
 .section-heading {
     margin-bottom: 30px;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
 }
 
 .banner {
@@ -203,14 +177,14 @@ a:link, a:hover {
     font-size: 3em;
 }
 
-.banner ul {
+/*.banner ul {
     margin-bottom: 0;
 }
 
 .banner-social-buttons {
     float: right;
     margin-top: 0;
-}
+}*/
 
 @media(max-width:1199px) {
     ul.banner-social-buttons {
@@ -339,7 +313,8 @@ p.copyright {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 6%;
+  border-radius: 5%;
+  border-color: #f8f8f8;
   background: #54ABFF;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
@@ -383,8 +358,8 @@ p.copyright {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 6%;
-  border-color: #54ABFF;
+  border-radius: 3.2%;
+  border-color: #cccccc;
   background: #54ABFF;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
