@@ -132,11 +132,12 @@ a:link, a:hover {
     padding: 50px 0;
 }
 .partnersImg {
-    display: block;
-    margin: auto;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 .partners .btn {
-    margin-top: 1%;
+    margin-top: 3%;
     background-color: rgba(84,171,255,1);
     color: #f8f8f8;
     border-color: #ffffff;
