@@ -17,8 +17,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 a:link, a:hover {
@@ -36,6 +40,7 @@ a:link, a:hover {
     text-align: center;
     color: #f8f8f8;
     background: url(../img/header-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -48,17 +53,20 @@ a:link, a:hover {
   background-color: transparent;
   text-align: right;
   margin-top: -1%;
+  margin-right: 3%;
   color: #f8f8f8;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .topnav p {
   margin-right: 2%;
+  word-spacing: 30px;
+  font-size: 120%;
 }
 
 .topnav a:link {
   text-transform: uppercase;
   color: #f8f8f8;
+
 }
 .topnav a:hover,
 .topnav a:focus {
@@ -99,13 +107,17 @@ a:link, a:hover {
 .aboutUs {
     padding: 50px 0;
     border-bottom: 1px solid #54ABFF;
-    /*background-color: rgba(84,171,255,1);*/
     background-color: rgb(9,15,61);
     color: #f8f8f8;
 }
 
 .aboutUs .aboutUsIcon {
-  color: rgb(84,171,255);
+  /*color: rgb(84,171,255);*/
+  color: #f8f8f8;
+}
+
+.aboutUs h3 {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content-section-a {
@@ -179,12 +191,12 @@ a:link, a:hover {
     padding: 100px 0;
     color: #f8f8f8;
     background: url(../img/header-bg.jpg) no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
     font-size: 3em;
 }
 
@@ -193,14 +205,12 @@ a:link, a:hover {
   margin-top: 5%;
   background-color: transparent;
   color: #f8f8f8;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   border-color: #f8f8f8;
   border-radius: 10px;
 }
 
 .mailBox {
   color: #f8f8f8;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   font-size: 18px;
   width: 73%;
   float: right;
@@ -212,25 +222,20 @@ a:link, a:hover {
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #f8f8f8;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #f8f8f8;
-   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #f8f8f8;
-   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #f8f8f8;
-   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
    color:    #f8f8f8;
-   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 /*.banner ul {
@@ -252,7 +257,6 @@ a:link, a:hover {
 @media(max-width:767px) {
     .banner h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
         font-size: 3em;
     }
 
