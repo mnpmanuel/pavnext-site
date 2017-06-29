@@ -32,12 +32,13 @@
 
 </head>
 
-<body>
+<body id="home">
 
     <!-- Header -->
     <div class="intro-header">
         <div class="topnav">
-            <p class="topnav">EN <a href="pt.html" class="topnav">PT</a></p>
+            <button class="btn btn-md"><a href="#home" class="topnav">EN</a></button>
+            <button class="btn btn-md"><a href="pt.html" class="topnav">PT</a></button>
         </div>
         <div class="container">
             <div class="row">
@@ -212,18 +213,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-lg-6">
-                    <h2>Stay up to date with <span style="color: #54ABFF;">Pavnext</span></h2>
+                    <h2>Stay up to date with Pavnext</h2>
                     <h4>Don't worry, we won't spam you</h4>
                 </div>
                 <div class="col-sm-4 col-lg-6 ">
                     <!-- Begin MailChimp Signup Form -->
                     <div id="mc_embed_signup">
-                        <form action="//pavnext.us16.list-manage.com/subscribe/post?u=857f9090a28a9451c7ea6993c&amp;id=9c280de67a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <form action="https://pavnext.us16.list-manage.com/subscribe/post" method="POST">
+                            <input type="hidden" name="u" value="857f9090a28a9451c7ea6993c">
+                            <input type="hidden" name="id" value="9c280de67a">
                             <div id="mc_embed_signup_scroll">
                                 <input style="float: right;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-md hvr-bounce-to-right">
                                 <div class="input input--hoshi">
-                                    <input class="input__field input__field--hoshi" type="email" id="mce-EMAIL" />
-                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="mce-EMAIL">
+                                    <input class="input__field input__field--hoshi" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" />
+                                    <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="MERGE0">
                                         <span class="input__label-content input__label-content--hoshi">Email Address</span>
                                     </label>
                                 </div>
