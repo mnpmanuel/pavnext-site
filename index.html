@@ -33,7 +33,26 @@
 
 </head>
 
-<body id="home">
+<body id="home" data-spy="scroll" data-target="#dot-nav" data-offset="15">
+
+    <nav id="dot-nav">
+        <ul class="nav navbar-custom" data-spy="affix">
+            <li class="awesome-tooltip active" title="Home"><a href="#home"></a></li>
+            <li class="awesome-tooltip" title="About"><a href="#aboutUs"></a></li>
+            <li class="awesome-tooltip" title="Road"><a href="#roadSafety"></a></li>
+            <li class="awesome-tooltip" title="Energy"><a href="#sustainableEnergyGeneration"></a></li>
+            <li class="awesome-tooltip" title="Data"><a href="#smartData"></a></li>
+            <li class="awesome-tooltip" title="Awards"><a href="#awards"></a></li>
+            <li class="awesome-tooltip" title="Partners"><a href="#partners1"></a></li>
+            <li class="awesome-tooltip" title="Contact"><a href="#contactUs"></a></li>
+            <!--<li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">EN<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <a href="pt.html">PT</a>
+                </ul>
+            </li>-->
+        </ul>
+    </nav>
 
     <!-- Header -->
     <div class="intro-header">
@@ -52,19 +71,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div data-spy="affix" id="dot-nav">
-        <ul class="nav">
-          <li class="awesome-tooltip active" title="Home"><a href="#home"></a></li>
-          <li class="awesome-tooltip" title="About"><a href="#aboutUs"></a></li>
-          <li class="awesome-tooltip" title="Road"><a href="#roadSafety"></a></li>
-          <li class="awesome-tooltip" title="Energy"><a href="#sustainableEnergyGeneration"></a></li>
-          <li class="awesome-tooltip" title="Data"><a href="#smartData"></a></li>
-          <li class="awesome-tooltip" title="Awards"><a href="#awards"></a></li>
-          <li class="awesome-tooltip" title="Partners"><a href="#partners"></a></li>
-          <li class="awesome-tooltip" title="Contact"><a href="#contactUs"></a></li>
-        </ul>
     </div>
 
     <!-- About Us -->
@@ -170,7 +176,7 @@
     </div>
 
     <!-- Partners -->
-    <div class="partners" id="partners">
+    <div class="partners" id="partners1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
