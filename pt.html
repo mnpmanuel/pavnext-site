@@ -11,13 +11,14 @@
 
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
-    <title>PAVNEXT</title>
+    <title>Pavnext</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/pavnext.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -34,11 +35,24 @@
 
 <body>
 
+    <div data-spy="affix" id="dot-nav">
+        <ul class="nav">
+          <li class="awesome-tooltip" title="Home"><a href="#home"></a></li>
+          <li class="awesome-tooltip" title="Sobre"><a href="#aboutUs"></a></li>
+          <li class="awesome-tooltip" title="Segurança"><a href="#roadSafety"></a></li>
+          <li class="awesome-tooltip" title="Energia"><a href="#sustainableEnergyGeneration"></a></li>
+          <li class="awesome-tooltip" title="Informação"><a href="#smartData"></a></li>
+          <li class="awesome-tooltip" title="Prémios"><a href="#awards"></a></li>
+          <li class="awesome-tooltip" title="Parceiros"><a href="#partners"></a></li>
+          <li class="awesome-tooltip" title="Contactos"><a href="#contactUs"></a></li>
+        </ul>
+    </div>
+
     <!-- Header -->
     <div class="intro-header">
         <div class="topnav">
-            <button class="btn btn-md"><a href="index.html" class="topnav">EN</a></button>
-            <button class="btn btn-md"><a href="pt.html" class="topnav">PT</a></button>
+            <a href="index.html" class="topnav">EN</a>
+            <a href="pt.html" class="topnav">PT</a>
         </div>
         <div class="container">
             <div class="row">
@@ -46,7 +60,7 @@
                     <div class="intro-message">
                         <img src="img/logo.png">
                         <br>
-                        <a href="#aboutUs" class="page-scroll"><button class="btn btn-lg hvr-bounce-to-bottom hvr-hang">Saber Mais</button></a>
+                        <a href="#aboutUs" class="page-scroll"><button class="btn btn-lg hvr-bounce-to-bottom hvr-hang wow animated fadeIn">Saber Mais</button></a>
                     </div>
                 </div>
             </div>
@@ -64,32 +78,32 @@
             <div class="row">
                 <div class="col-md-2 col-md-offset-1 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-shield text-primary aboutUsIcon"></i>
-                        <h3>Segurança Rodoviária</h3>
+                        <i class="fa fa-4x fa-shield text-primary aboutUsIcon wow animated bounce"></i>
+                        <h3 class="wow animated fadeIn">Segurança Rodoviária</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-bolt text-primary aboutUsIcon"></i>
-                        <h3>Recolha de Energia</h3>
+                        <i class="fa fa-4x fa-bolt text-primary aboutUsIcon wow animated bounce"></i>
+                        <h3 class="wow animated fadeIn">Recolha de Energia</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-leaf text-primary aboutUsIcon"></i>
-                        <h3>Geração de Energia Limpa</h3>
+                        <i class="fa fa-4x fa-leaf text-primary aboutUsIcon wow animated bounce"></i>
+                        <h3 class="wow animated fadeIn">Geração de Energia Limpa</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-tachometer text-primary aboutUsIcon"></i>
-                        <h3>Eficiência Energética</h3>
+                        <i class="fa fa-4x fa-tachometer text-primary aboutUsIcon wow animated bounce"></i>
+                        <h3 class="wow animated fadeIn">Eficiência Energética</h3>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-road text-primary aboutUsIcon"></i>
-                        <h3>Monitorização de Trafego</h3>
+                        <i class="fa fa-4x fa-road text-primary aboutUsIcon wow animated bounce"></i>
+                        <h3 class="wow animated fadeIn">Monitorização de Trafego</h3>
                     </div>
                 </div>
             </div>
@@ -97,48 +111,48 @@
     </div>
 
     <!-- Our Description -->
-    <div class="content-section-a">
+    <div class="content-section-a" id="roadSafety">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
-                    <h2 class="section-heading" style="float: right;">Segurança Rodoviária</h2>
+                    <h2 class="section-heading wow animated fadeInDown" style="float: right;">Segurança Rodoviária</h2>
                 </div>
                 <div class="col-lg-6 col-sm-6">
-                    <p class="lead">A Organização Mundial de Saúde aponta a velocidade excessiva como a principal causa dos acidentes rodoviários. As soluções atuais para redução da velocidade de circulação dependem da ação dos condutores. O projeto Pavnext apresenta a primeira solução que reduz a velocidade de circulação dos veículos sem qualquer ação dos condutores e, ao mesmo tempo, sem interferir com o conforto dos ocupantes do veículo.</p>
+                    <p class="lead wow animated fadeInUp">A Organização Mundial de Saúde aponta a velocidade excessiva como a principal causa dos acidentes rodoviários. As soluções atuais para redução da velocidade de circulação dependem da ação dos condutores. O projeto Pavnext apresenta a primeira solução que reduz a velocidade de circulação dos veículos sem qualquer ação dos condutores e, ao mesmo tempo, sem interferir com o conforto dos ocupantes do veículo.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="content-section-b">
+    <div class="content-section-b" id="sustainableEnergyGeneration">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
-                    <p class="lead">O Pavnext converte com uma elevada eficiência a energia captada a partir do movimento de veículos em energia elétrica. Uma vez que os locais de aplicação consistem em zonas de redução de velocidade, o Pavnext utiliza uma energia que de outra forma seria dissipada. Desta forma, o Pavnext recicla energia tipicamente perdida para energia elétrica limpa.</p>
+                    <p class="lead wow animated fadeInUp">O Pavnext converte com uma elevada eficiência a energia captada a partir do movimento de veículos em energia elétrica. Uma vez que os locais de aplicação consistem em zonas de redução de velocidade, o Pavnext utiliza uma energia que de outra forma seria dissipada. Desta forma, o Pavnext recicla energia tipicamente perdida para energia elétrica limpa.</p>
                 </div>
                 <div class="col-lg-6  col-sm-6">
-                    <h2 class="section-heading">Produção de Energia Sustentável</h2>
+                    <h2 class="section-heading wow animated fadeInDown">Produção de Energia Sustentável</h2>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="content-section-c">
+    <div class="content-section-c" id="smartData">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-sm-6">
-                    <h2 class="section-heading" style="float: right;">Dados Inteligentes e Eficiência Energética</h2>
+                    <h2 class="section-heading wow animated fadeInDown" style="float: right; text-align: right;">Dados Inteligentes e Eficiência Energética</h2>
                 </div>
                 <div class="col-lg-6 col-sm-6">
-                    <p class="lead">Atendendo a que o Pavnext é implementado no pavimento rodoviário, tem uma posição privilegiada para monitorizar dados de tráfego em tempo real bem como energia elétrica gerada e consumida. Com base nesta informação, o Pavnext consegue otimizar os consumos energéticos do local em tempo real de forma única.</p>
+                    <p class="lead wow animated fadeInUp">Atendendo a que o Pavnext é implementado no pavimento rodoviário, tem uma posição privilegiada para monitorizar dados de tráfego em tempo real bem como energia elétrica gerada e consumida. Com base nesta informação, o Pavnext consegue otimizar os consumos energéticos do local em tempo real de forma única.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Awards -->
-    <div class="awards">
-        <div class="container">
+    <div class="awards" id="awards">
+        <div class="container wow animated fadeInDown">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Prémios</h2>
@@ -155,36 +169,37 @@
     </div>
 
     <!-- Partners -->
-    <div class="partners">
+    <div class="partners" id="partners">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Parceiros</h2>
+                    <hr>
+                    <h2 class="section-heading wow animated fadeInUp">Parceiros</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1 partnersImg">
+            <div class="row wow animated fadeInUp">
+                <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-1 partnersImg">
                     <a href="https://www.uc.pt/" target="blank">
                         <img src="img/logos/uc.jpg" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 partnersImg">
+                <div class="col-xs-12 col-sm-4 col-md-2  partnersImg">
                     <a href="https://www.mitportugal.org/" target="blank">
                         <img src="img/logos/mitportugal.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <!--<div class="clearfix visible-sm-block"></div>-->
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 partnersImg">
+                <div class="col-xs-12 col-sm-4 col-md-2 partnersImg">
                     <a href="http://www.fct.pt/" target="blank">
                         <img src="img/logos/fct.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 partnersImg">
+                <div class="col-xs-12 col-sm-4 col-md-2 partnersImg">
                     <a href="https://www.ipn.pt/">
                         <img src="img/logos/ipn.png" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 partnersImg">
+                <div class="col-xs-12 col-sm-4 col-md-2 partnersImg">
                     <a href="https://www.acp.pt/" target="blank">
                         <img src="img/logos/acp.png" class="img-responsive" alt="">
                     </a>
@@ -199,9 +214,9 @@
     </div>
 
     <!-- Mailchimp Banner -->
-    <div class="banner">
+    <div class="banner" id="contactUs">
         <div class="container">
-            <div class="row">
+            <div class="row wow animated fadeInUp">
                 <div class="col-sm-8 col-lg-6">
                     <h2>Mantenha-se a par com o Pavnext</h2>
                     <h4>Não se preocupe, só enviaremos informações importantes</h4>
@@ -231,7 +246,7 @@
                     <!--End mc_embed_signup-->
                 </div>
             </div>
-            <div class="row">
+            <div class="row wow animated fadeInUp">
                 <div class="col-sm-12 text-center">
                     <a href="mailto:main@pavnext.com"><button class="btn btn-lg hvr-bounce-to-right">Ou Contacte-nos</button></a>
                 </div>
@@ -275,6 +290,7 @@
     <!-- Custom JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/pavnext.js"></script>
+    <script src="js/wow.min.js"></script>
 
 </body>
 
