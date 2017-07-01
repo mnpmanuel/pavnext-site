@@ -30,8 +30,35 @@ a:link, a:hover {
     text-decoration: none;
 }
 
+.btn {
+    border-color: #f8f8f8;
+    color: #f8f8f8;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn:hover,
+.btn:focus {
+    border-color: #b7b7b7;
+    color: #b7b7b7;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
 .lead {
     font-size: 20px;
+    display: block;
 }
 
 .navbar-custom {
@@ -85,6 +112,15 @@ a:link, a:hover {
     border-left:5px solid #757575;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display:none;
+    background-color: transparent;
+    color: #f8f8f8;
+}
+
 .intro-header {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -132,27 +168,6 @@ a:link, a:hover {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-.intro-message .btn {
-    border-color: #f8f8f8;
-    color: #f8f8f8;
-    font-weight: 700;
-    letter-spacing: 1px;
-    background-color: transparent;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.intro-message .btn:hover,
-.intro-message .btn:focus {
-    border-color: #b7b7b7;
-    color: #b7b7b7;
-    font-weight: 700;
-    letter-spacing: 1px;
-    background-color: transparent;
-    border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .aboutUs {
@@ -213,12 +228,20 @@ a:link, a:hover {
 .awards {
     /*background-color: #2c5791;*/
     background-color: #295593;
-    padding-top: 11%;
+    padding-top: 22%;
+    padding-bottom: 6%;
     padding-right: 0;
     padding-left: 0;
     /*color: #737373;*/
     color: #f8f8f8;
+    position: relative;
 }
+
+/*.awards .awards-col {
+    position: absolute;
+    top: 50%;
+}*/
+
 .awards img {
     margin: auto;
     margin-bottom: 1%;
@@ -226,16 +249,17 @@ a:link, a:hover {
     max-width: 50%;
 }
 .awards a:link, a:visited {
-    color:#f8f8f8;
+    color:#b7b7b7;
 }
 .awards a:hover, a:active {
-    color: #b7b7b7;
+    color: #757575;
 }
 
 .partners {
     background-color: #295593;
     /*background-color: #2c5791;*/
-    padding-bottom: 11%;
+    padding-bottom: 22%;
+    padding-top: 6%;
     padding-right: 0;
     padding-left: 0;
     /*color: #737373;*/
@@ -280,20 +304,26 @@ a:link, a:hover {
 }
 
 .banner {
-    padding: 100px 0;
+    /*padding: 100px 0;*/
     color: #f8f8f8;
     background: url(../img/header-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
+    padding-top: 22%;
+    padding-bottom: 22%;
 }
 
 .banner h2 {
     margin: 0;
     font-size: 3em;
+    text-align: right;
+}
+
+.banner p {
+    text-align: right;
 }
 
 .banner .btn {
-    margin-top: 5%;
     background-color: transparent;
     color: #f8f8f8;
     border-color: #f8f8f8;
@@ -304,41 +334,30 @@ a:link, a:hover {
 .banner .btn:focus {
     border-color: #b7b7b7;
     color: #b7b7b7;
-    margin-top: 5%;
     background-color: transparent;
     border-radius: 10px;
 }
 
 .banner .subscribe {
-    float: right;
+    float: left;
+    margin-top: 0;
+
 }
 
-.mailBox {
-    color: #f8f8f8;
-    font-size: 18px;
-    width: 73%;
-    float: right;
-    text-align: center;
+.banner .btnContact {
     background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #f8f8f8;
+    color: #f8f8f8;
+    border-color: #f8f8f8;
+    border-radius: 10px;
+    margin-top: 15%;
 }
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-        color:    #f8f8f8;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-     color:    #f8f8f8;
-     opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-     color:    #f8f8f8;
-     opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-     color:    #f8f8f8;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-     color:    #f8f8f8;
+
+.banner .btnContact:hover,
+.banner .btnContact:focus {
+    border-color: #b7b7b7;
+    color: #b7b7b7;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
 @media(max-width:767px) {
@@ -371,19 +390,19 @@ p.copyright {
     position: relative;
     z-index: 1;
     display: inline-block;
-    margin: 1em;
+    /*margin: 1em;*/
     max-width: 350px;
     width: calc(100% - 2em);
-    vertical-align: top;
-    float: right;
+    vertical-align: middle;
+    float: left;
 }
 
 .input__field {
     position: relative;
     display: block;
-    float: right;
+    float: left;
     padding: 0.8em;
-    width: 60%;
+    width: 100%;
     border: none;
     border-radius: 0;
     background: #f0f0f0;
@@ -398,7 +417,7 @@ p.copyright {
 
 .input__label {
     display: inline-block;
-    float: right;
+    float: left;
     padding: 0 1em;
     width: 40%;
     color: #f8f8f8;
