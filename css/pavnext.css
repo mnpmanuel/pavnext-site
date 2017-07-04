@@ -74,6 +74,12 @@ a:link, a:hover {
     z-index: 999;
 }
 
+@media(max-width:767px) {
+    .navbar-custom {
+        right: 0px;
+    }
+}
+
 .navbar-custom ul {
     list-style: none;
     margin:0;
@@ -183,7 +189,6 @@ a:link, a:hover {
 }
 
 .aboutUs {
-    /*background-color: #87b742;*/
     background-color: rgb(62,123,151);
     color: #f8f8f8;
     padding-top: 22%;
@@ -212,7 +217,6 @@ a:link, a:hover {
 }
 
 .content-section-b {
-    /*background-color: #fcc740;*/
     background-color: #adce44;
     color: #f8f8f8;
     padding-top: 22%;
@@ -244,13 +248,7 @@ a:link, a:hover {
     padding-right: 0;
     padding-left: 0;
     color: #737373;
-    /*color: #f8f8f8;*/
 }
-
-/*.awards .awards-col {
-    position: absolute;
-    top: 50%;
-}*/
 
 .awards img {
     margin: auto;
@@ -266,14 +264,12 @@ a:link, a:hover {
 }
 
 .partners {
-    /*background-color: #295593;*/
     background-color: #f8f8f8;
     padding-bottom: 22%;
     padding-top: 6%;
     padding-right: 0;
     padding-left: 0;
     color: #737373;
-    /*color: #f8f8f8;*/
 }
 
 .partnersImg {
@@ -309,7 +305,6 @@ a:link, a:hover {
 }
 
 .banner {
-    /*padding: 100px 0;*/
     color: #f8f8f8;
     background: url(../img/header-bg.jpg) no-repeat center center;
     background-attachment: fixed;
@@ -341,12 +336,6 @@ a:link, a:hover {
     color: #b7b7b7;
     background-color: transparent;
     border-radius: 10px;
-}
-
-.banner .subscribe {
-    float: left;
-    margin-top: 0;
-
 }
 
 .banner .btnContact {
@@ -394,18 +383,17 @@ p.copyright {
 .input {
     position: relative;
     z-index: 1;
-    display: inline-block;
-    /*margin: 1em;*/
+    display: block;
     max-width: 350px;
     width: calc(100% - 2em);
     vertical-align: middle;
-    float: left;
+    float: right;
 }
 
 .input__field {
     position: relative;
     display: block;
-    float: left;
+    float: right;
     padding: 0.8em;
     width: 100%;
     border: none;
