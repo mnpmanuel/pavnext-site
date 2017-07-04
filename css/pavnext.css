@@ -51,11 +51,6 @@ a:link, a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-.vcenter {
-    display: flex;
-    align-items: center;
-}
-
 .lead {
     font-size: 20px;
     display: block;
@@ -135,6 +130,8 @@ a:link, a:hover {
 }
 
 .intro-header {
+    height: 100%;
+    position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
@@ -142,12 +139,33 @@ a:link, a:hover {
     background: url(../img/header-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
-    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 22%;
+    padding-bottom: 22%;
 }
 
 .intro-header img {
     max-width: 75%;
     height: auto;
+}
+
+@media(max-width:500px) {
+    .intro-message {
+        padding-top: 55%;
+    }
+}
+
+@media (min-width:501px) and (max-width:767px) {
+    .intro-message {
+        padding-top: 28%;
+    }
 }
 
 .intro-header .topnav {
@@ -177,17 +195,6 @@ a:link, a:hover {
     border-bottom: 2px solid #b7b7b7; 
 }
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
 .aboutUs {
     background-color: rgb(62,123,151);
     color: #f8f8f8;
@@ -210,6 +217,10 @@ a:link, a:hover {
     background: url(../img/safety.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .content-section-a p {
@@ -232,6 +243,10 @@ a:link, a:hover {
     background: url(../img/eficiency.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     min-height: 80%;
     padding-top: 22%;
     padding-bottom: 22%;
@@ -306,6 +321,10 @@ a:link, a:hover {
     background: url(../img/header-bg.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     padding-top: 22%;
     padding-bottom: 22%;
 }
@@ -357,8 +376,8 @@ a:link, a:hover {
 
 @media(max-width:767px) {
     .banner h2 {
-            margin: 0;
-            font-size: 3em;
+        margin: 0;
+        font-size: 3em;
     }
 }
 
