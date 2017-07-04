@@ -253,6 +253,7 @@ a:link, a:hover {
 .awards img {
     margin: auto;
     margin-bottom: 1%;
+    margin-top: 7%;
     max-height: 100px;
     max-width: 50%;
 }
@@ -323,6 +324,10 @@ a:link, a:hover {
     text-align: right;
 }
 
+.banner .bannerMail {
+    margin-top: -20px;
+}
+
 .banner .btn {
     background-color: transparent;
     color: #f8f8f8;
@@ -358,6 +363,14 @@ a:link, a:hover {
     .banner h2 {
             margin: 0;
             font-size: 3em;
+    }
+}
+
+@media(max-width:768px) {
+    .banner .bannerMail {
+        margin-top: -30px;
+        margin-bottom: 50px;
+        max-width: 95%;
     }
 }
 
