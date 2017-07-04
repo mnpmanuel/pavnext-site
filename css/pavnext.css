@@ -104,8 +104,10 @@ a:link, a:hover {
 }
 
 .awesome-tooltip + .tooltip > .tooltip-inner {
-    background-color: #b7b7b7; 
-    color: #f8f8f8; 
+    /*background-color: #b7b7b7;*/
+    background-color: transparent; 
+    /*color: #f8f8f8;*/ 
+    color: #b7b7b7;
     border: 1px solid #b7b7b7; 
 }
 .awesome-tooltip + .tooltip.left > .tooltip-arrow{
@@ -162,6 +164,11 @@ a:link, a:hover {
 .topnav a:hover,
 .topnav a:focus {
     color: #b7b7b7;
+}
+
+.topnav .topnavActive {
+    background-color: transparent; 
+    border-bottom: 2px solid #b7b7b7; 
 }
 
 .intro-message {
@@ -543,5 +550,28 @@ p.copyright {
         opacity: 1;
         -webkit-transform: translate3d(0, -40%, 0);
         transform: translate3d(0, -40%, 0);
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
     }
 }
