@@ -265,7 +265,23 @@ a:link, a:hover {
     color: #737373;
 }
 
+.awards h1 {
+    margin-bottom: 2%;
+}
+
+.awardsCol {
+    margin-top: 40%;
+    transform: translate(0%, -50%);
+}
+
+@media (max-width:1023px) {
+    .awardsCol {
+        margin-bottom: -30%;
+    }
+}
+
 .awards img {
+    display:block;
     margin: auto;
     margin-bottom: 1%;
     margin-top: 7%;
@@ -273,7 +289,7 @@ a:link, a:hover {
     max-width: 50%;
 }
 .awards a:link, a:visited {
-    color:#b7b7b7;
+    color: #b7b7b7;
 }
 .awards a:hover, a:active {
     color: #757575;
@@ -305,6 +321,12 @@ a:link, a:hover {
 @media (min-width:768px) and (max-width:1023px) {
     .partners img {
         margin-left: 25px;
+    }
+}
+
+@media (max-width:767px) {
+    .partners img {
+        max-width: 50%;;
     }
 }
 
