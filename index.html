@@ -8,16 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Pavnext consists of a road pavement surface application equipment that allows kinetic energy to be extracted from vehicles and, consequently, reduce their speed without any action of the driver and without impacting the vehicle or affecting the ride quality. Thus, Pavnext promotes road safety in a unique way at locations where it is required to circulate at low speed, as in approaching crosswalks, roundabouts, schools, among others.">
     <meta name="author" content="Pavnext">
+    <meta name="keywords" content="Entrepreneurship,Road, Safety,Green,Electricity,Startup,Hardware,Innovation">
+    <meta name="robots" content="index, follow">
+    <!--<meta property="fb:app_id" content="1723992014540744"/>-->
+    <meta property="og:title" content="Pavnext" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Pavnext consists of a road pavement surface application equipment that allows kinetic energy to be extracted from vehicles and, consequently, reduce their speed without any action of the driver and without impacting the vehicle or affecting the ride quality." />
+    <meta property="og:url" content="http://pavnext.com/" />
+    <meta property="og:site_name" content="Pavnext" />
+    <meta property="og:image" content="http://pavnext.com/img/icon.png" />
 
     <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 
-    <title>PAVNEXT</title>
+    <title>Pavnext</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/pavnext.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,69 +40,95 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-101989404-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
 </head>
 
-<body id="home">
+<body id="home" data-spy="scroll" data-target="#dot-nav" data-offset="15">
+
+    <!-- Navbar -->
+    <nav id="dot-nav">
+        <ul class="nav navbar-custom" data-spy="affix">
+            <li class="awesome-tooltip active" title="Home"><a href="#home"></a></li>
+            <li class="awesome-tooltip" title="About"><a href="#aboutUs"></a></li>
+            <li class="awesome-tooltip" title="Road"><a href="#roadSafety"></a></li>
+            <li class="awesome-tooltip" title="Energy"><a href="#sustainableEnergyGeneration"></a></li>
+            <li class="awesome-tooltip" title="Data"><a href="#smartData"></a></li>
+            <li class="awesome-tooltip" title="Awards"><a href="#awards"></a></li>
+            <li class="awesome-tooltip" title="Partners"><a href="#partners"></a></li>
+            <li class="awesome-tooltip" title="Contact"><a href="#contactUs"></a></li>
+            <li class="awesome-tooltip" title="Follow"><a href="#footer"></a></li>
+        </ul>
+    </nav>
 
     <!-- Header -->
     <div class="intro-header">
         <div class="topnav">
-            <button class="btn btn-md"><a href="#home" class="topnav">EN</a></button>
-            <button class="btn btn-md"><a href="pt.html" class="topnav">PT</a></button>
+            <a href="index.html" class="topnav topnavActive">EN</a>
+            <a href="pt.html" class="topnav">PT</a>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <img src="img/logo.png">
-                        <!--<h3>The Technological Pavements Company</h3>-->
+                        <img src="img/logo.png" srcset="img/logoS.png 1x, img/logo.png 2x, img/logo.png 3x" alt="">
                         <br>
-                        <a href="#aboutUs" class="page-scroll"><button class="btn btn-lg hvr-bounce-to-bottom hvr-hang">Tell Me More</button></a>
+                        <a href="#aboutUs" class="page-scroll"><button class="btn btn-lg wow animated fadeIn">Tell me more</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div><a id="back-to-top" href="#" class="btn btn-md back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a></div>
+
     <!-- About Us -->
     <div id="aboutUs" class="aboutUs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What We Do</h2>
+                    <h1 class="section-heading">What we do</h1>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="row">
                 <div class="col-md-2 col-md-offset-1 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-shield text-primary aboutUsIcon"></i>
-                        <h3>Road Safety</h3>
+                        <i class="fa fa-4x fa-road text-primary aboutUsIcon wow animated bounce"></i>
+                        <h4 class="wow animated fadeIn">Road Safety</h4>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-bolt text-primary aboutUsIcon"></i>
-                        <h3>Energy Harvesting</h3>
+                        <i class="fa fa-4x fa-car text-primary aboutUsIcon wow animated bounce"></i>
+                        <h4 class="wow animated fadeIn">Traffic Monitoring</h4>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-leaf text-primary aboutUsIcon"></i>
-                        <h3>Clean Energy Generation</h3>
+                        <i class="fa fa-4x fa-bolt text-primary aboutUsIcon wow animated bounce"></i>
+                        <h4 class="wow animated fadeIn">Energy Harvesting</h4>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-tachometer text-primary aboutUsIcon"></i>
-                        <h3>Energy Efficiency</h3>
+                        <i class="fa fa-4x fa-leaf text-primary aboutUsIcon wow animated bounce"></i>
+                        <h4 class="wow animated fadeIn">Clean Energy Generation</h4>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-4 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-road text-primary aboutUsIcon"></i>
-                        <h3>Traffic Monitoring</h3>
+                        <i class="fa fa-4x fa-lightbulb-o text-primary aboutUsIcon wow animated bounce"></i>
+                        <h4 class="wow animated fadeIn">Energy Efficiency</h4>
                     </div>
                 </div>
             </div>
@@ -100,104 +136,154 @@
     </div>
 
     <!-- Our Description -->
-    <div class="content-section-a">
+    <div class="content-section-a" id="roadSafety">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Road Safety</h2>
-                    <p class="lead">The World Health Organization defines excessive speed as the main cause of road accidents. Current solutions to reduce vehicle speeds are all depending on the driver' action. Pavnext presents the first solution that will reduce vehicles' speed without any driver action and, at the same time, without affect or interfere with ride quality.</p>
+                <div class="col-lg-6 col-sm-6 col-xs-11">
+                    <h1 class="section-heading wow animated fadeInDown" style="float: right;">Road Safety</h1>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/safety.jpg" alt="">
+                <div class="col-lg-6 col-sm-6 col-xs-11">
+                    <p class="lead wow animated fadeInUp">The World Health Organization defines excessive speed as the main cause of road accidents. Current solutions to reduce vehicle speeds are all depending on the driver' action. Pavnext presents the first solution that will reduce vehicles' speed without any driver action and, at the same time, without affect or interfere with ride quality.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="content-section-b">
+    <div class="content-section-b" id="sustainableEnergyGeneration">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Sustainable Energy Generation</h2>
-                    <p class="lead">Pavnext converts with a very high efficiency the energy harvested from vehicles into electrical energy. As the target implementation areas consist of speed reduction areas, Pavnext makes use of an energy that otherwise would be lost. As so, it recycles a wasted energy into clean electrical energy.</p>
+                <div class="col-md-6 col-md-push-6 col-sm-6 col-sm-push-6 col-xs-11">
+                    <h1 class="section-heading wow animated fadeInDown">Sustainable Energy Generation</h1>
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/sustainable.jpg" alt="">
+                <div class="col-md-6 col-md-pull-6 col-sm-6 col-sm-pull-6 col-xs-11">
+                    <p class="lead wow animated fadeInUp">Pavnext converts with a very high efficiency the energy harvested from vehicles into electrical energy. As the target implementation areas consist of speed reduction areas, Pavnext makes use of an energy that otherwise would be lost. As so, it recycles a wasted energy into clean electrical energy.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="content-section-a">
+    <div class="content-section-c" id="smartData">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Smart Data And Energy Eficiency</h2>
-                    <p class="lead">As Pavnext is implemented in the road pavement, it has a privileged position to monitor traffic and speed, and since it generated and delivers electrical energy it can also monitor these. Combining all the information, it makes use of it to optimize energy consumptions in real time in a unique way.</p>
+                <div class="col-lg-6 col-sm-6 col-xs-11">
+                    <h1 class="section-heading wow animated fadeInDown" style="text-align: right; float: right;">Smart Data And Energy Eficiency</h1>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/eficiency.jpg" alt="">
+                <div class="col-lg-6 col-sm-6 col-xs-11">
+                    <p class="lead wow animated fadeInUp">As Pavnext is implemented in the road pavement, it has a privileged position to monitor traffic and speed, and since it generated and delivers electrical energy it can also monitor these. Combining all the information, it makes use of it to optimize energy consumptions in real time in a unique way.</p>
                 </div>
             </div>
-
         </div>
     </div>
 
     <!-- Awards -->
-    <div class="awards">
-        <div class="container">
+    <div class="awards" id="awards">
+        <div class="container wow animated fadeInDown">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Awards</h2>
+                    <h1 class="section-heading">Awards</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <a href="http://premiosr.com/pt/premio" target="blank"><img src="img/awards/seg.jpg" class="img-responsive " alt=""></a>
-                    <a href="http://premiosr.com/pt/premio" target="blank"><h4 class="color: #ffffff;">Prémio Inovação segurança Rodoviária 2016</h4></a>
-                    <p>ACP & BP</p>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <div class="imgCol">
+                        <a href="http://premiosr.com/pt/premio" target="blank"><img src="img/awards/seg.jpg" srcset="img/awards/segS.jpg 1x, img/awards/seg.jpg 2x, img/awards/seg.jpg 3x" class="img-responsive" alt=""></a>
+                        <a href="http://premiosr.com/pt/premio" target="blank"><h4>Prémio Inovação Segurança Rodoviária 2016</h4></a>
+                        <p>ACP & BP</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <div class="imgCol">
+                        <a href="https://bigsmartcities.com/pt/city-challenges" target="blank"><img src="img/awards/big_smart_coimbra.png" srcset="img/awards/big_smart_coimbraS.png 1x, img/awards/big_smart_coimbra.png 2x, img/awards/big_smart_coimbra.png 3x" class="img-responsive" alt=""></a>
+                        <a href="https://bigsmartcities.com/pt/city-challenges" target="blank"><h4>BIG Smart Cities<br>Coimbra City Challenge</h4></a>
+                        <p>Vodafone & Ericsson</p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <div class="imgCol">
+                        <a href="http://climatelaunchpad.org/finalists/pavnext/" target="blank"><img src="img/awards/CLP15.png" srcset="img/awards/CLP15S.png 1x, img/awards/CLP15.png 2x, img/awards/CLP15.png 3x" class="img-responsive" alt=""></a>
+                        <a href="http://climatelaunchpad.org/finalists/pavnext/" target="blank"><h4>Climate Launchpad Portugal</h4></a>
+                        <p>EIT Climate-KIC</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 text-center">
+                    <div class="imgCol">
+                        <a href="http://www.bigsmartcities.pt/" target="blank"><img src="img/awards/big.png" srcset="img/awards/bigS.png 1x, img/awards/big.png 2x, img/awards/big.png 3x" class="img-responsive" alt=""></a>
+                        <a href="http://www.bigsmartcities.pt/" target="blank"><h4>Big Smart Cities<br>BIG Winner</h4></a>
+                        <p>Vodafone & Ericsson</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Partners -->
-    <div class="partners">
+    <div class="partners" id="partners">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Partners</h2>
+                    <h1 class="section-heading wow animated fadeInUp">Partners</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-1 partnersImg">
-                    <a href="https://www.uc.pt/" target="blank">
-                        <img src="img/logos/uc.jpg" class="img-responsive" alt="">
-                    </a>
+            <div class="row wow animated fadeInUp">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="https://www.uc.pt/" target="blank">
+                            <img src="img/logos/uc.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 partnersImg">
-                    <a href="https://www.mitportugal.org/" target="blank">
-                        <img src="img/logos/mitportugal.png" class="img-responsive" alt="">
-                    </a>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="https://www.mitportugal.org/" target="blank">
+                            <img src="img/logos/mitportugal.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
-                <!--<div class="clearfix visible-sm-block"></div>-->
-                <div class="col-xs-12 col-sm-4 col-md-2 partnersImg">
-                    <a href="http://www.fct.pt/" target="blank">
-                        <img src="img/logos/fct.png" class="img-responsive" alt="">
-                    </a>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="http://www.fct.pt/" target="blank">
+                            <img src="img/logos/fct.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 partnersImg">
-                    <a href="https://www.ipn.pt/">
-                        <img src="img/logos/ipn.png" class="img-responsive" alt="">
-                    </a>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="https://www.ipn.pt/">
+                            <img src="img/logos/ipn.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2 partnersImg">
-                    <a href="https://www.acp.pt/" target="blank">
-                        <img src="img/logos/acp.png" class="img-responsive" alt="">
-                    </a>
+            </div>
+            <div class="row wow animated fadeInUp">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="https://www.acp.pt/" target="blank">
+                            <img src="img/logos/acp.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="http://www.climate-kic.org/" target="blank">
+                            <img src="img/logos/kic.jpg" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="http://powerlab.vodafone.pt/" target="blank">
+                            <img src="img/logos/vodafone.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- class partnersImg causing problems -->
+                    <div class="imgCol">
+                        <a href="https://www.ericsson.com/" target="blank">
+                            <img src="img/logos/ericsson.png" class="img-responsive" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
             <!--<div class="row">
@@ -209,31 +295,31 @@
     </div>
 
     <!-- Mailchimp Banner -->
-    <div class="banner">
+    <div class="banner" id="contactUs">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8 col-lg-6">
+                <div class="col-xs-10 col-xs-push-1 col-sm-10 col-sm-push-0 col-md-12 col-lg-6 wow animated fadeInUp">
                     <h2>Stay up to date with Pavnext</h2>
-                    <h4>Don't worry, we won't spam you</h4>
+                    <p class="lead" style="margin-top:1%;">Don't worry, we won't spam you</p>
                 </div>
-                <div class="col-sm-4 col-lg-6 ">
+                <div class="col-xs-10 col-xs-push-1 col-sm-5 col-sm-push-5 col-md-5 col-md-push-7 col-lg-6 col-lg-push-0 wow animated fadeInDown bannerMail">
                     <!-- Begin MailChimp Signup Form -->
                     <div id="mc_embed_signup">
                         <form action="https://pavnext.us16.list-manage.com/subscribe/post" method="POST">
                             <input type="hidden" name="u" value="857f9090a28a9451c7ea6993c">
                             <input type="hidden" name="id" value="9c280de67a">
                             <div id="mc_embed_signup_scroll">
-                                <input style="float: right;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-md hvr-bounce-to-right">
                                 <div class="input input--hoshi">
                                     <input class="input__field input__field--hoshi" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" />
                                     <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="MERGE0">
                                         <span class="input__label-content input__label-content--hoshi">Email Address</span>
                                     </label>
                                 </div>
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-md input">
                                 <div id="mce-responses" class="clear">
                                     <div class="response" id="mce-error-response" style="display:none"></div>
                                     <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                </div>
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_857f9090a28a9451c7ea6993c_9c280de67a" tabindex="-1" value=""></div>
                             </div>
                         </form>
@@ -241,27 +327,48 @@
                     <!--End mc_embed_signup-->
                 </div>
             </div>
-            <div class="row">
+            <div class="row wow animated fadeInUp">
                 <div class="col-sm-12 text-center">
-                    <a href="mailto:main@pavnext.com"><button class="btn btn-lg hvr-bounce-to-right">Or Contact Us</button></a>
+                    <a href="mailto:main@pavnext.com"><button class="btn btn-lg btnContact">Or Contact Us</button></a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 text-center">
+                    <p class="location">Where we are</p>
                     <ul class="list-inline quicklinks text-center">
-                        <li>Coimbra and Porto, Portugal
-                        </li>
-                        <li><a href="mailto:main@pavnext.com">Contact Us</a>
-                        </li>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="imgCol">
+                                    <a href="http://powerlab.vodafone.pt/" target="blank">
+                                        <img src="img/logos/vodafone.png" class="img-responsive" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="imgCol">
+                                    <a href="https://www.ipn.pt/">
+                                        <img src="img/logos/ipn.png" class="img-responsive" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="imgCol">
+                                    <a href="http://uptec.up.pt/" target="blank">
+                                        <img src="img/logos/uptec.png" class="img-responsive" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
                 <div class="col-md-4 text-center">
+                    <p>Follow us</p>
                     <ul class="list-inline social-buttons">
                         <li><a href="https://www.facebook.com/Pavnext-1888763191389776/" target="blank"><i class="fa fa-facebook fa-2x"></i></a>
                         </li>
@@ -269,8 +376,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 text-center">
-                    <span class="copyright">Copyright &copy; Pavnext 2017</span>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks text-center">
+                        <li class="copyright">Copyright &copy; Pavnext 2017</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -285,6 +394,7 @@
     <!-- Custom JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/pavnext.js"></script>
+    <script src="js/wow.min.js"></script>
 
 </body>
 
