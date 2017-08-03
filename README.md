@@ -8,6 +8,5 @@ Used Twitter's Bootstrap as a base to develop a Landing Page for Pavnext. Added 
 
 ##Things left to do:
 
-*Setup Mailchimp account
-*Add Mailchimp signup form to the landing page
-*Setup everything in the web server
+*Normalize CSS
+*Double check responsiveness 
