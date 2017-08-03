@@ -105,9 +105,7 @@ a:link, a:hover {
 }
 
 .awesome-tooltip + .tooltip > .tooltip-inner {
-    /*background-color: #b7b7b7;*/
     background-color: transparent; 
-    /*color: #f8f8f8;*/ 
     color: #b7b7b7;
     border: 1px solid #b7b7b7; 
 }

@@ -8,5 +8,4 @@ Used Twitter's Bootstrap as a base to develop a Landing Page for Pavnext. Added 
 
 ##Things left to do:
 
-*Normalize CSS
-*Double check responsiveness 
+*Non at the moment
