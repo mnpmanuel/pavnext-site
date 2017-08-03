@@ -427,8 +427,14 @@ footer img {
     margin:auto;
     margin-bottom: 1%;
     margin-top: -1%;
-    max-height: 75px;
+    max-height: 25%;
     max-width: 10px;
+}
+
+@media (max-width: 426) {
+    footer img {
+        max-height: 50px;
+    }
 }
 
 p.copyright {
